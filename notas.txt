@@ -1,0 +1,63 @@
+MERN Stack Curso - Mongodb, Express, React y Nodejs, Parte 1 - Backend con Nodejs, Express y Mongodb
+https://www.youtube.com/watch?v=DqpL5UtJHus&list=WL&index=29&t=0s
+
+MERN Stack Curso - Mongodb, Express, React y Nodejs, Parte 2 - Frontend con React
+https://www.youtube.com/watch?v=204v5QXHlmc&index=2&list=WL
+
+5,156 vistas
+Fazt
+Publicado el 11 jun. 2018
+El Stack MERN, tiene como objetivo crear aplicaciones web modernas con Javascript como principal lenguaje
+ tanto el Frontend como en el Backend y la Base de datos.
+En este curso crearemos un aplicación CRUD que es una Single Page Application
+ o Aplicacion de una sola página utilizando Reactjs. y esta estará alojada
+en un servidor Nodejs que usara Express como framework del lado servidor y Mongodb como Base de datos.
+
+CURSO DE REACT: https://www.youtube.com/playlist?list=PLL0TiOXBeDai6x37_wQwWX6_qNZUM4FBm
+CURSO DE MONGODB: https://www.youtube.com/playlist?list=PLL0TiOXBeDaj94IqckOt8M18pLlfdP9U0
+CURSO DE EXPRESS: https://www.youtube.com/watch?v=8eg4w8v076w
+CÓDIGO FINAL DEL PROYECTO: https://github.com/FaztWeb/mern-stack-tasks
+
+PARTE 1: BACKEND NODE EXPRES MONGO MONGOOSE
+-------------------------------------------
+creo el server.js   para servir las aplicaciones node express
+creo el routes/tasks.routes.js para maejar el enrutamiento
+creo el models/task.js para el modelo de datos
+creo el database.js par aconeccion con la bbdd
+creo public par alos archivos publicos estaticos, y los bundels compilados
+creo App para la aplicacion de react
+
+npm init -y
+npm install --save express
+npm i -D nodemon
+"start": "node server.js"
+"dev": "nodemon ./src/erver.js"
+
+npm install --save 
+    morgan  sirve para ver las peticiones al servdor por consola
+
+edito el router/task.router.js
+creo el public/index.html
+npm i -S mongoose   para conectar al bbss y definir como seran estos
+creo la conec a bb database.js
+crear los modelo en el archivo task.js
+agrego las rutas para leer y guardar tareas en el task.routes.js
+
+PARTE 2 FRONENDT REACT
+----------------------
+
+vamos a coufigurar la app react desde creo
+npm i -D webpack webpack-cli react react-dom
+creo el webpack.config.js   y genero la configuracion
+creo el app/index.js    y cominezo a ingresar los componentes de react
+
+npm i -D babel  babel-loader@7 babel-core babel-preset-env babel-preset-react
+(ojo bable-loader ^8 requiere @babel/core @babel/preset-env @babel/preset-react
+ !!!!no babel-core, NI babel-preset-env babel-preset-react, A MENOS QUE USE BABEL 7)
+creo el .babelrc con los presets env, react
+agrego lo sloadres al webpack.config.js en module rules
+
+
+
+
+ 
