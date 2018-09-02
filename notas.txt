@@ -52,12 +52,34 @@ creo el webpack.config.js   y genero la configuracion
 creo el app/index.js    y cominezo a ingresar los componentes de react
 
 npm i -D babel  babel-loader@7 babel-core babel-preset-env babel-preset-react
+
+OJO 
+ESTE TUTORIAL ANDA SOLO CON LAS SIGUIENTES VERCIONES
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "nodemon": "1.17.5",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "webpack": "4.11.1",
+    "webpack-cli": "3.0.3"
+
 (ojo bable-loader ^8 requiere @babel/core @babel/preset-env @babel/preset-react
  !!!!no babel-core, NI babel-preset-env babel-preset-react, A MENOS QUE USE BABEL 7)
 creo el .babelrc con los presets env, react
 agrego lo sloadres al webpack.config.js en module rules
 
+"webpack": "webpack --mode development --watch" (el --watch permite hot rebuild)
 
+agrego los componetes para el css
+agrego el CDN de matetializacss.com  en index.html
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
+construyo el contenido de la pagina y los formularios en el app.js
 
- 
