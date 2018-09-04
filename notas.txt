@@ -41,7 +41,8 @@ creo el public/index.html
 npm i -S mongoose   para conectar al bbss y definir como seran estos
 creo la conec a bb database.js
 crear los modelo en el archivo task.js
-agrego las rutas para leer y guardar tareas en el task.routes.js
+agrego las rutas para leer y guardar modificar eliminar y consultar tareas en el task.routes.js
+se recomienda instalar la extencion POSTMAN de chrome para hacer pruebas a la api
 
 PARTE 2 FRONENDT REACT
 ----------------------
@@ -82,4 +83,17 @@ agrego el CDN de matetializacss.com  en index.html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
 construyo el contenido de la pagina y los formularios en el app.js
+creo los metodos para agregar tareas desde el form a la api
+creo los metodos para consultar las tareas y mostrarlas en la lista, tambibien para al actualizacion de la lista de tareas luego de guardar
+agrego los metodos para editar y borar tareas
 
+TODO:
+    separar en componetes parciales uno para la el form, otro para al lista
+    separar cada componente en un container y un view
+    agergar redux, definir acciones y reducers
+    pasar los datos al store de redus
+
+    agregar un login
+    agregar seguridad por toquen a la api
+    agregar fechas a las tareas
+    agergar estados a las tareas realiada, anulada

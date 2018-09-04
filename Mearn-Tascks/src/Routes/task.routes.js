@@ -16,7 +16,7 @@ router.post('/', async (req,res)=> {
     const {title,  description} = req.body;
     const task = new Task ( {title,  description});
     await task.save()
-    res.json({status: 'task saved'})
+    res.json({APIstatus: 'task saved'})
 });
 
 //nn- 15 agrego la ruta para obterner tarea por id
@@ -32,13 +32,13 @@ router.put('/:id', async (req,res) => {
     const {title,  description} = req.body;
     const newTask = {title,  description};
     await Task.findByIdAndUpdate(req.params.id, newTask );
-    res.json({status: 'task updated'})
+    res.json({APIstatus: 'task updated'})
 });
 //nn- 14 agrego la ruta para eliminar una tarea
 router.delete('/:id', async (req,res) => {
     console.log(req.params.id);
     await Task.findByIdAndRemove(req.params.id);
-    res.json({status: 'task deleted'})
+    res.json({APIstatus: 'task deleted'})
 });
 
 module.exports = router;
